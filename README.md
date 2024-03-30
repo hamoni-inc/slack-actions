@@ -13,7 +13,7 @@ jobs:
     name: SendMessage
     runs-on: ubuntu-latest
     steps:
-    - uses: hamoni-inc/slack-action@main
+    - uses: hamoni-inc/slack-action@latest
     - name: send to slack
       with:
         webhook: "https://slack..."
