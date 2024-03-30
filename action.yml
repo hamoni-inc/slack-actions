@@ -1,0 +1,23 @@
+name: Slack Actions
+description: Send to Slack with WebHook.
+author: HAMONI Inc - YnP
+inputs:
+  webhook:
+    description: "Slack WebHook URL"
+  message:
+    description: "Message"
+    default: ""
+  username:
+    description: "User Name (ex: xxx)"
+    default: "User"
+  icon:
+    description: "Icon URL (ex: https://xxx...)"
+    default: "https://hamoni.jp/img/neko.png"
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'award'
+  color: 'green'
